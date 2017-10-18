@@ -25,14 +25,14 @@ p {
 }
 
 .inner-box {
+    background: #ea4545;
     border: 3px dashed;
-    background: red;
 }
 
 #target_1 {
     height: 200px;
-    width: 200px;
     padding: 50px;
+    width: 200px;
 }
 
 #target_1 #inner_box {
@@ -41,8 +41,8 @@ p {
 
 #target_2 {
     height: 30vw;
-    width: 30vw;
     padding: 7%;
+    width: 30vw;
 }
 
 #target_2 #inner_box2 {
@@ -65,14 +65,18 @@ p {
 /* --------------- EXO 3*/
 .exo3 .row {
     border: 1px solid;
+    margin-bottom: 5px;
     padding: 5px 5px 0;
     width: 65%;
-    margin-bottom: 5px;
 }
 
 .exo3 .block {
-    height: 20px;
     background: purple;
+    color: orange;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: center;
 }
 
 .exo3 .block.small {
@@ -93,45 +97,45 @@ p {
 
 /* --------------- EXO 4*/
 .ib-row {
-    font-size: 0;
     color: white;
+    font-size: 0;
     margin-bottom: 20px;
     max-width: 540px;
 }
 .ib-row.red {
-    background: red;
+    background: #ea4545;
 }
 .ib-row.black {
     background: black;
 }
 
 .ib-row .block {
-    font-size: 1rem;
-    width: 25%;
     display: inline-block;
-    text-align: center;
+    font-size: 1rem;
     height: 40px;
     line-height: 40px;
+    text-align: center;
+    width: 25%;
 }
 
 /* --------------- EXO 5*/
 
 .circles {
     border: 2px solid;
-    overflow: hidden;
-    width: 240px;
-    padding: 10px 10px 0;
     margin-bottom: 20px;
+    overflow: hidden;
+    padding: 10px 10px 0;
+    width: 240px;
 }
 
 .circle {
+    background: #30ea30;
+    border-radius: 50%;
     height: 100px;
     line-height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    text-align: center;
-    background: forestgreen;
     margin-bottom: 10px;
+    text-align: center;
+    width: 100px;
 }
 
 .circle.left {
@@ -171,27 +175,27 @@ p {
 }
 
 .blue-blocks .col {
-    display: inline-block;
     background: darkorange;
+    display: inline-block;
 }
 
 .blue-blocks .block {
+    background: blue;
     display: inline-block;
+    font-size: 1rem;
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: blue;
-    font-size: 1rem;
 }
 
 .blue-blocks .row:first-of-type .block {
-    width: calc(25% - 7.5px);
     margin-right: 10px;
+    width: calc(25% - 7.5px);
 }
 
 .blue-blocks .row:last-of-type .block {
-    width: calc(50% - 2.5px);
     margin-right: 5px;
+    width: calc(50% - 2.5px);
 }
 
 .blue-blocks .row:last-of-type .block:first-of-type {
@@ -204,8 +208,8 @@ p {
 }
 
 .blue-blocks .row:last-of-type .col:first-of-type {
-    width: calc(70% - 10px);
     margin-right: 10px;
+    width: calc(70% - 10px);
 }
 
 .blue-blocks .row:last-of-type .col:last-of-type {
