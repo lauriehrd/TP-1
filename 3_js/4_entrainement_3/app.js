@@ -31,3 +31,56 @@ var ajouterAuTableau = function (p){
 
 var res = ajouterAuTableau(2);
 console.log(arr === res);
+
+function creerUser(n, l, a) {
+    return {
+        name: n,
+        lastname: l,
+        age: a
+    };
+}
+
+var user1 = creerUser("guillaume", "amangoua", 37);
+var user2 = creerUser("jerem", "ahbari", 42);
+var user3 = creerUser("soufiane", "rouass", 27);
+
+console.log(user1, user2, user3);
+
+
+function comprendreScope() {
+    var a = "une valeur";
+    console.log(a);
+    console.log(arr);
+
+    function scopeInterne() {
+        var b = "une autre valeur";
+        console.log(a);
+        console.log(b);
+        console.log(arr);
+    }
+    // console.log(b); // undefined ici !!!!
+    // scopeInterne();
+}
+comprendreScope();
+// console.log(a); // undefined ici !!!!
+
+// on y reviendra ... mais c'est UBER IMPORTANT
+
+/*************** LES CONDITIONS */
+// if
+// else if
+// else
+
+var a = 100, b = 10, c = 1;
+
+
+if (isNaN("450")) {
+    console.log("cas 1");
+
+} else if (!isNaN(typeof 23)) {
+    console.log("cas 2");
+
+} else {
+    console.log("cas 3");
+}
+// la suite du prog....
