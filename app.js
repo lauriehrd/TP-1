@@ -1,32 +1,43 @@
-(function () {
-
-	window.onload = function init(){
-
-		function getPageModules(){
+(function tp1() {
 
 
-			var tab = [];
-			var header = document.getElementById("entete");
-			var nav = document.getElementById("search");
-			var aside = document.getElementById("aside");
-			var main = document.getElementById("container");
-			var footer = document.getElementById("footer");
-			tab.push(header, nav, aside, main, footer);
+	var tab;
+
+	function getPageModules() {
+		return document.querySelectorAll("#entete, #aside, #container, #footer");
+	}
 
 
-		}
+	function styliserModule(num, color, bg) {
+		tab[num].style.color = color;
+		tab[num].style.backgroundColor = bg;
 
-		function styliserModule(num, color, bg){
+	}
+
+
+	function getModuleInfos(num) {
+
+		console.log(object = { id: tab[num].id,
+				classe: tab[num].className,
+				balise: tab[num].tagName,
+				dimension: tab[num].getBoundingClientRect()
 
 
 
-			styliserModule(tab.length, )
 
-		}
+		});
 
-		function getModuleInfos (){
+	}
 
-		}
+	window.onload = function init() {
+		tab = getPageModules();
+		styliserModule(0, "black", "peachpuff");
+		styliserModule(1, "black", "rosybrown");
+		styliserModule(2, "black", "papayawhip");
+		styliserModule(3, "black", "silver");
+
+
+
 	}
 
 }());
